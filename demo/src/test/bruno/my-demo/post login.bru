@@ -1,0 +1,26 @@
+meta {
+  name: post login
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/login
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "username":"Ted",
+    "password":"passted"
+  }
+}
+
+script:post-response {
+  bru.setVar("jwt","Bearer "+res.body.token)
+}
