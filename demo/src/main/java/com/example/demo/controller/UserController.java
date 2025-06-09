@@ -1,9 +1,9 @@
 package com.example.demo.controller;
 
-import com.example.demo.model.User;
-import com.example.demo.repository.UserRepository;
 import com.example.demo.model.LoginRequest;
 import com.example.demo.model.LoginResponse;
+import com.example.demo.model.User;
+import com.example.demo.repository.UserRepository;
 import com.example.demo.service.JwtService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
